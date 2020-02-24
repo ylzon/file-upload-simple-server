@@ -22,7 +22,8 @@ app.get('/upload/:key', cors(), function(req, res, next){
     }
   })
 })
-const port = path.env.port || 3000
+
+const port = process.env.port || 3000
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`)
 })
